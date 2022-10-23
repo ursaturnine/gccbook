@@ -2,6 +2,7 @@ import ReactDOM from 'react-dom';
 import { useState, useEffect, useRef } from 'react';
 import * as esbuild from 'esbuild-wasm';
 import { unpkgPathPlugin } from './plugins/unpkg-path-plugin';
+import './styles/index.css'
 
 const App = () => {
     //ref.current refers to any type of variable
@@ -46,6 +47,7 @@ const App = () => {
     }
 
     return <div>
+        <div><h1>Girls Code Club Interactive Code Notebook</h1></div>
         <textarea value={input} onChange={e => setInput(e.target.value)}></textarea>
         <div>
             <button onClick={onClick}>Submit</button>
